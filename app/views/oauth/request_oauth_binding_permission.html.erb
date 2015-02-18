@@ -1,0 +1,20 @@
+<div id="login-form">
+  <h2>
+    <%= l(:label_user_found, login: @user.login) %>
+  </h2>
+  <%= form_tag submit_oauth_binding_permission_path(@user, @oauth_id) do %>
+    <p>
+      <label>
+        <%= l(:accept_binding_oauth_id) %>
+      </label>
+      <%= radio_button_tag :bind_oauth, 1, true %>
+    </p>
+    <p>
+      <label>
+        <%= l(:reject_binding_oauth_id) %>
+      </label>
+      <%= radio_button_tag :bind_oauth, 0 %>
+    </p>
+    <%= submit_tag l(:label_submit) %>
+  <% end %>
+</div>

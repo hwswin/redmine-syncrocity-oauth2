@@ -1,0 +1,39 @@
+<h3>
+  <%= t(:label_oauth_settings) %>
+</h3>
+
+<div class="box tabular settings">
+  <p>
+    <label><%= l(:label_notify_admin_on_new_users) %></label>
+    <%= check_box_tag 'settings[notify_admin_on_new_users]', 1, @settings[:notify_admin_on_new_users] %>
+  </p>
+
+  <p>
+    <label><%= l(:label_always_redirect_to_oauth) %></label>
+    <%= check_box_tag 'settings[always_redirect_to_oauth]', 1, @settings[:always_redirect_to_oauth ] %>
+  </p>
+
+  <p>
+    <label><%= l(:label_authorize_endpoint_url) %></label>
+    <%= text_field_tag 'settings[authorize_endpoint_url]', @settings[:authorize_endpoint_url] %>
+  </p>
+  <p>
+    <label><%= l(:label_api_url) %></label>
+    <%= text_field_tag 'settings[api_endpoint_url]', @settings[:api_endpoint_url] %>
+  </p>
+
+  <p>
+    <label><%= l(:label_token_endpoint_url) %></label>
+    <%= text_field_tag 'settings[token_endpoint_url]', @settings[:token_endpoint_url] %>
+  </p>
+  <p>
+    <label><%= l(:label_app_id) %></label>
+    <%= text_field_tag 'settings[app_id]', @settings[:app_id] %>
+  </p>
+  <p>
+    <label><%= l(:label_app_secret) %></label>
+    <%= text_field_tag 'settings[app_secret]', @settings[:app_secret] %>
+  </p>
+
+</div>
+

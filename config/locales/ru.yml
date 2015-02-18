@@ -1,0 +1,23 @@
+ru:
+  label_notify_admin_on_new_users: Уведомлять администратора о новых пользователях
+  label_always_redirect_to_oauth: Всегда использовать OAuth авторизацию
+  label_oauth_settings: Настройки OAuth
+  label_authorize_endpoint_url: URL для авторизации
+  label_token_endpoint_url: URL получения токена
+  label_app_id: ID приложения
+  label_app_secret: Секрет приложения
+  label_login_via_oauth: Вход через OAuth
+  label_api_url: API URL
+  new_user_subject: Новый пользователь зарегистрировался через OAuth
+  new_user_body: Пользователь %{login} только что зарегистрировался через OAuth
+  new_user_body_html: Пользователь <a href=%{user_path}>%{login}</a> только что зарегистрировался через OAuth
+  label_user_found: Пользователь с указанным адресом электронной почты уже существует
+  accept_binding_oauth_id: Связать учетные записи Redmine и OAuth
+  reject_binding_oauth_id: Возврат ко входу в систему
+  label_submit: Отправить решение
+  oauth_binding_cancelled: Связь учетных записей OAuth и Redmine отменена
+  binding_confirmation_subject: Подтвердите привязку OAuth к Вашей учетной записи Redmine
+  binding_confirmation_body_html: "Кто-то (возможно, Вы) пожелал привязать OAuth авторизацию к Вашей учетной записи Redmine. Если это были Вы - перейдите по этой ссылке <a href='%{confirm_path}'>%{confirm_path}<a>"
+  binding_confirmation_body: "Кто-то (возможно, Вы) пожелал привязать OAuth авторизацию к Вашей учетной записи Redmine. Если это были Вы - перейдите по этой ссылке %{confirm_path}"
+  label_please_confirm: Подтвердите привязку аккаунтов пройдя по ссылки из письма, которое мы Вам только что послали
+  token_not_found: Извините, но использованная вами ссылка не работает. Убедитесь что Вы скопировали ее полностью. Учтите, что ссылка может быть использована только один раз.

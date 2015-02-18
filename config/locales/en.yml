@@ -1,0 +1,23 @@
+en:
+  label_notify_admin_on_new_users: Notify admin on new users
+  label_always_redirect_to_oauth: Always redirect to oauth
+  label_oauth_settings: OAuth settings
+  label_authorize_endpoint_url: Authorize endpoint URL
+  label_token_endpoint_url: Token endpoint URL
+  label_app_id: Application ID
+  label_app_secret: Application secret
+  label_login_via_oauth: Login via OAuth
+  label_api_url: API URL
+  new_user_subject: New user registered via OAuth
+  new_user_body: User %{login} just registered via OAuth
+  new_user_body_html: User <a href=%{user_path}>%{login}</a> just registered via OAuth
+  label_user_found: User with the email specified was already found
+  accept_binding_oauth_id: Link that user account to OAuth account just used
+  reject_binding_oauth_id: Abort and return to sign in page
+  label_submit: Submit your decision
+  oauth_binding_cancelled: Binding OAuth and Redmine accounts cancelled
+  binding_confirmation_subject: Confirm binding OAuth to your account
+  binding_confirmation_body_html: "Someone (perhaps you) has requested to bind OAuth authorization. If you are OK with that just click this <a href='%{confirm_path}'>%{confirm_path}<a>"
+  binding_confirmation_body: "Someone (perhaps you) has requested to bind OAuth authorization. If you are OK with that just visit this URL: %{confirm_path}"
+  label_please_confirm: Please confirm account binding by clicking link in email we just sent to your address
+  token_not_found: Sorry, but link you have supplied is damaged. Make sure you copied it fully. Also mind that link could be used only once
