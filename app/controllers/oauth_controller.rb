@@ -18,7 +18,7 @@ class OauthController < ApplicationController
       redirect_to request_oauth_binding_permission_path(user, oauth_hash['id'])
     else # User not found neither by email nor by Oauth id
       Rails.logger.info oauth_hash.inspect
-      user = User.find_or_initialize_by_oauth_id(oauth_hash['id'])
+      user = User.where(oauth_id: oauth_hash['id']).first_or_create
       if user.new_record?
         user.login = oauth_hash['login']
         user.mail = oauth_hash['email']
