@@ -89,11 +89,13 @@ class OauthController < ApplicationController
   end
 
   def authorize_endpoint
-    Setting.plugin_redmine_oauth_client[:authorize_endpoint_url]
+    "http://www.test.linkerplus.com/o/authorize/"
+    #Setting.plugin_redmine_oauth_client[:authorize_endpoint_url]
   end
 
   def app_id
-    Setting.plugin_redmine_oauth_client[:app_id]
+    "6vfgY6XWlPyi2fSzYBipL9aY53xkJ80BIS4F8j3u"
+    #Setting.plugin_redmine_oauth_client[:app_id]
   end
 
   def redirect_uri
@@ -101,11 +103,13 @@ class OauthController < ApplicationController
   end
 
   def token_endpoint
-    Setting.plugin_redmine_oauth_client[:token_endpoint_url]
+    "http://www.test.linkerplus.com/o/token/"
+    #Setting.plugin_redmine_oauth_client[:token_endpoint_url]
   end
 
   def app_secret
-    Setting.plugin_redmine_oauth_client[:app_secret]
+    "1UD9hyFfI9NeOf4V6TqgGHstir0Vp5K7vTroDay3VTvPRbmup7vaGRrYlxV6j2SodaBppwmEx6qPefJnujJmCZ8g1RkAPGc1QQQJi1vG1TgP0s4vMbHFZReoB0wUOpl1"
+    #Setting.plugin_redmine_oauth_client[:app_secret]
   end
 
   def get_token(code)
@@ -117,7 +121,8 @@ class OauthController < ApplicationController
   end
 
   def api_me
-    Setting.plugin_redmine_oauth_client[:api_endpoint_url]
+    "http://www.test.linkerplus.com/api/userinfo/"
+    #Setting.plugin_redmine_oauth_client[:api_endpoint_url]
   end
 
   def get_me(token)
