@@ -121,7 +121,7 @@ class OauthController < ApplicationController
   end
 
   def api_me
-    "http://www.test.linkerplus.com/api/userinfo/"
+    "http://www.test.linkerplus.com/o/profile/"
     #Setting.plugin_redmine_oauth_client[:api_endpoint_url]
   end
 
